@@ -64,3 +64,32 @@ The database `auth.db3` includes a single `users` table:
 ### Task 3: Stretch Goals
 
 - Build a React application that implements components to register, login and view a list of users. Gotta keep sharpening your React skills.
+
+<!--
+# Tests
+
+    [ ] [0] sanity check (33 ms)
+    server.js
+## [POST] /api/auth/login
+    [ ] [1] responds with the correct message on valid credentials (23 ms)
+    [ ] [2] a "chocolatechip" cookie gets set on the client on valid credentials (5 ms)
+    [ ] [3] no cookie gets set on invalid credentials (saveUninitialized=false) (4 ms)
+    [ ] [4] responds with the correct message on invalid credentials (4 ms)
+
+## [POST] /api/auth/register
+    [ ] [5] creates a new user in the database (4 ms)
+    [ ] [6] new user passwords are saved correctly bcrypted (3 ms)
+    [ ] [7] no cookie gets set by registering (saveUninitialized=false) (4 ms)
+    [ ] [8] responds with the user (user_id and username) (6 ms)
+    [ ] [9] responds with the proper status code and message on "username taken" (3 ms)
+    [ ] [10] responds with the proper status code and message on too short a password (3 ms)
+
+## [GET] /api/auth/logout
+    [ ] [11] if there is a session it is destroyed so "chocolatechip" cookie not effective anymore (3 ms)
+    [ ] [12] responds with the proper message if the user was not actually logged in (9 ms)
+
+## [GET] /api/users
+    [ ] [13] responds with the proper status code and message on not-logged-in user (6 ms)
+    [ ] [14] responds with the users if there is a session matching the "chocolatechip" cookie (6 ms)
+
+ -->
