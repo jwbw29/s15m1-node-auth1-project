@@ -77,10 +77,10 @@ The database `auth.db3` includes a single `users` table:
     [ ] [4] responds with the correct message on invalid credentials (4 ms)
 
 ## [POST] /api/auth/register
-    [ ] [5] creates a new user in the database (4 ms)
-    [ ] [6] new user passwords are saved correctly bcrypted (3 ms)
+    [x] [5] creates a new user in the database (4 ms)
+    [x] [6] new user passwords are saved correctly bcrypted (3 ms)
     [x] [7] no cookie gets set by registering (saveUninitialized=false) (4 ms)
-    [ ] [8] responds with the user (user_id and username) (6 ms)
+    [x] [8] responds with the user (user_id and username) (6 ms)
     [x] [9] responds with the proper status code and message on "username taken" (3 ms)
     [x] [10] responds with the proper status code and message on too short a password (3 ms)
 
