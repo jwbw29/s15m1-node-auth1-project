@@ -28,7 +28,7 @@ server.use(
     secret: "shh",
     saveUninitialized: false,
     resave: false,
-    Store: new Store({
+    store: new Store({
       knex,
       createTable: true,
       clearInterval: 1000 * 60 * 10, //default
