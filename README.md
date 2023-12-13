@@ -68,21 +68,21 @@ The database `auth.db3` includes a single `users` table:
 <!--
 # Tests
 
-    [ ] [0] sanity check (33 ms)
+    [x] [0] sanity check (33 ms)
     server.js
 ## [POST] /api/auth/login
     [ ] [1] responds with the correct message on valid credentials (23 ms)
     [ ] [2] a "chocolatechip" cookie gets set on the client on valid credentials (5 ms)
-    [ ] [3] no cookie gets set on invalid credentials (saveUninitialized=false) (4 ms)
+    [x] [3] no cookie gets set on invalid credentials (saveUninitialized=false) (4 ms)
     [ ] [4] responds with the correct message on invalid credentials (4 ms)
 
 ## [POST] /api/auth/register
     [ ] [5] creates a new user in the database (4 ms)
     [ ] [6] new user passwords are saved correctly bcrypted (3 ms)
-    [ ] [7] no cookie gets set by registering (saveUninitialized=false) (4 ms)
+    [x] [7] no cookie gets set by registering (saveUninitialized=false) (4 ms)
     [ ] [8] responds with the user (user_id and username) (6 ms)
-    [ ] [9] responds with the proper status code and message on "username taken" (3 ms)
-    [ ] [10] responds with the proper status code and message on too short a password (3 ms)
+    [x] [9] responds with the proper status code and message on "username taken" (3 ms)
+    [x] [10] responds with the proper status code and message on too short a password (3 ms)
 
 ## [GET] /api/auth/logout
     [ ] [11] if there is a session it is destroyed so "chocolatechip" cookie not effective anymore (3 ms)
