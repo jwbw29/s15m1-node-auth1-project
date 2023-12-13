@@ -89,7 +89,7 @@ The database `auth.db3` includes a single `users` table:
     [ ] [12] responds with the proper message if the user was not actually logged in (9 ms)
 
 ## [GET] /api/users
-    [ ] [13] responds with the proper status code and message on not-logged-in user (6 ms)
-    [ ] [14] responds with the users if there is a session matching the "chocolatechip" cookie (6 ms)
+    [x] [13] responds with the proper status code and message on not-logged-in user (6 ms)
+    [x] [14] responds with the users if there is a session matching the "chocolatechip" cookie (6 ms)
 
  -->
