@@ -71,10 +71,10 @@ The database `auth.db3` includes a single `users` table:
     [x] [0] sanity check (33 ms)
     server.js
 ## [POST] /api/auth/login
-    [ ] [1] responds with the correct message on valid credentials (23 ms)
-    [ ] [2] a "chocolatechip" cookie gets set on the client on valid credentials (5 ms)
+    [x] [1] responds with the correct message on valid credentials (23 ms)
+    [x] [2] a "chocolatechip" cookie gets set on the client on valid credentials (5 ms)
     [x] [3] no cookie gets set on invalid credentials (saveUninitialized=false) (4 ms)
-    [ ] [4] responds with the correct message on invalid credentials (4 ms)
+    [x] [4] responds with the correct message on invalid credentials (4 ms)
 
 ## [POST] /api/auth/register
     [x] [5] creates a new user in the database (4 ms)
